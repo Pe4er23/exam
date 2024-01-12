@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="exam.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<form action="" id="education">
+    <label for="fullName">П.І.Б.</label>
+        <input id="fullName" type="text" placeholder="Введить ваш П.І.Б.">
+    <br>
+
+    <label>Оберіть рік навчання</label>
+    <input type="radio" id="year1" name="yearEducation" value="1">
+    <label for="year1">1 курс</label>
+
+    <input type="radio" id="year2" name="yearEducation" value="2">
+    <label for="year2">2 курс</label>
+
+    <input type="radio" id="year3" name="yearEducation" value="3">
+    <label for="year3">3 курс</label>
+    <br>
+
+    <label for="aboutEducation">Ви добре навчаєтесь?</label>
+    <input type="checkbox" id="aboutEducation" name="aboutEducation">
+    <br>
+    <label for="phoneNumber">Введіть ваш номер телефону: +38</label>
+    <input type="text" id="phoneNumber" placeholder="000-000-00-00  " pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+    <br>
+    <button id="submit" style="margin-left:20px;">Submit</button>
+</form>
+<div>
+    <h2>Таблиця</h2>
+    <table id="Table">
+        <tr>
+            <th>П.І.Б.</th>
+            <th>Курс</th>
+            <th>Добре навчається</th>
+            <th>Номер телефону</th>
+        </tr>
+    </table>
+
+    <h2>Список</h2>
+    <ul id="resultList">
+        <!-- Список результатів буде тут -->
+    </ul>
+</div>
+<script src="exam.js"></script>
+</body>
+</html>
